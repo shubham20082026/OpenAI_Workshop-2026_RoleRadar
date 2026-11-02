@@ -1,0 +1,35 @@
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Private configuration (only the blank template is tracked)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local tooling, provider state, logs and exports
+.openai/
+.codex/
+.supabase/
+supabase/.temp/
+supabase/.branches/
+work/
+*.log
+roleradar-my-data*.json
+scamlens-my-data*.json
+*.sql.dump
+*.dump
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
