@@ -187,10 +187,6 @@ docs/                Setup, build story, source policy, licenses and screenshots
 .env.example         Blank configuration template
 ```
 
-## Publishing this folder to GitHub
-
-The preparation guide has the exact commands: **[GITHUB-SETUP.md](GITHUB-SETUP.md)**. Only this clean repository folder should be added; private environment files, old Git history, dependencies, build output and local tool metadata are excluded.
-
 ## Project documents
 
 - [Build story and AI assistance](docs/BUILD-STORY.md)
