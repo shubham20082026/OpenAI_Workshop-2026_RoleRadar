@@ -1,5 +1,7 @@
 # RoleRadar
 
+[OpenAI deployment](OPENAI-DEPLOYMENT.md) — hosted version and verification notes.
+
 **Find the opening. See the fit.**
 
 RoleRadar is an individual student project for exploring real remote internships and early-career roles, seeing the exact skill mentions behind each result, and keeping a private shortlist.

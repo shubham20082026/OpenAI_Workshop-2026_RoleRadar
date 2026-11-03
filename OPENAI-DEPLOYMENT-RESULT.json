@@ -1,0 +1,20 @@
+{
+  "url": "https://roleradar.satingull2.chatgpt.site",
+  "status": "succeeded",
+  "access": "owner-private",
+  "site_id": "appgprj_6ae6ca1dd76c8191a83feaff7b102c15",
+  "version_id": "appgprj_6ae6ca1dd76c8191a83feaff7b102c15~appgver_2aa3be74e5fc819198e9b97c808ac17a",
+  "deployment_id": "appgdep_6aea012bc9c481919918461a784d1296",
+  "commit_sha": "64a4d10ea00bf5af768b0764d0d239f3908c8a29",
+  "confirmed_at": "2026-11-03T15:44:17.317367+00:00",
+  "local_checks": {
+    "tests_passed": 63,
+    "tests_failed": 0,
+    "live_test_skipped": 1,
+    "typecheck": "passed",
+    "production_build": "passed",
+    "production_dependency_vulnerabilities": 0
+  },
+  "browser_qa": "unverified",
+  "email_delivery": "pending SMTP and production callback verification"
+}

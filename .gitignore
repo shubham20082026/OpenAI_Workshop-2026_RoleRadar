@@ -33,3 +33,13 @@ scamlens-my-data*.json
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# OpenAI Sites adapter: track its non-secret hosting manifest
+!openai-site/.openai/
+!openai-site/.openai/hosting.json
+openai-site/.sites-runtime/
+openai-site/.wrangler/
+openai-site/.vinext/
+openai-site/.next/
+openai-site/.dev.vars*
+openai-site/*.tsbuildinfo
