@@ -3,10 +3,10 @@
   "status": "succeeded",
   "access": "owner-private",
   "site_id": "appgprj_6ae6ca1dd76c8191a83feaff7b102c15",
-  "version_id": "appgprj_6ae6ca1dd76c8191a83feaff7b102c15~appgver_c4e5aece84c08191bea9d7cf06bab8e5",
-  "deployment_id": "appgdep_6aea02f5954881919803c13c884c5eb1",
-  "commit_sha": "9cd0769b519495c2118d65ff16821f2be1366603",
-  "confirmed_at": "2026-11-03T15:51:44.112018+00:00",
+  "version_id": "appgprj_6ae6ca1dd76c8191a83feaff7b102c15~appgver_eac972ea539c8191994b52bcc1479b7c",
+  "deployment_id": "appgdep_6aea0444be9c81919619758ecf8ac7f0",
+  "commit_sha": "9b0ac79ae1151b8bdd355750b050c55ac25d6e4f",
+  "confirmed_at": "2026-11-03T15:57:20.724508+00:00",
   "local_checks": {
     "tests_passed": 66,
     "tests_failed": 0,
@@ -16,19 +16,20 @@
     "production_dependency_vulnerabilities": 0
   },
   "live_http_checks": {
-    "passed": 6,
+    "passed": 7,
     "checks": [
       "Live homepage HTTP200 and title",
       "Live Worker API and Supabase/deletion configuration",
       "Private profile rejects missing app login",
       "Foreign-origin mutation rejected",
       "Correct hosted origin accepted before validation",
-      "Live search endpoint returns explicit source state"
+      "Live search endpoint returns explicit source state",
+      "Published D1 catalog resolves returned listing ID"
     ],
-    "sourceState": "unavailable",
-    "retrievedJobs": 0,
-    "openingState": null
+    "sourceState": "live",
+    "retrievedJobs": 20,
+    "openingState": "open"
   },
-  "browser_qa": "unverified",
+  "browser_qa": "Full visual/interaction audit not performed on hosted adapter",
   "email_delivery": "pending SMTP and production callback verification"
 }

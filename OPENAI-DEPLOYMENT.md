@@ -1,19 +1,31 @@
-# OpenAI deployment
+# RoleRadar on OpenAI
 
-The existing standalone app and your latest app/landing changes were preserved. The deployable OpenAI hosting adapter is in [openai-site](openai-site/README.md).
+**[Open the live site](https://roleradar.satingull2.chatgpt.site)**
 
-It uses the supplied Sites/Vinext starter and Cloudflare Node HTTP bridge, preserves Supabase ownership checks, and shares only canonical public job listings through the hosting database. No real environment file, credentials, dependency folder, build output or Git history was copied into the adapter.
+OpenAI Sites confirmed successful deployment on 3 November 2026. Access remains **private to the owner's account**. The deployment result and exact source/version identifiers are in [OPENAI-DEPLOYMENT-RESULT.json](OPENAI-DEPLOYMENT-RESULT.json).
 
-Verification: 66 local tests passed, one live-account case skipped; type checking and production build passed. Production dependency audit reported zero vulnerabilities. Local Wrangler browser verification was blocked by its global-settings folder access; hosted browser/email flows are not represented by local unit tests.
+## Changes in this folder
 
-The Site keeps owner-private access. Supabase confirmation/recovery delivery needs suitable SMTP and the final HTTPS callback allowed in the provider. See [hosting notes](openai-site/OPENAI-HOSTING.md).
+The deployable hosting version is under [openai-site](openai-site/README.md). Your standalone project and latest app/landing edits are preserved. The root README links here, and .gitignore protects the adapter's local runtime files.
 
-## Confirmed live deployment
+The hosted copy preserves the existing UI, Supabase ownership checks and private history. A Worker bridge serves the Express API. D1 stores only canonical public listing data across server instances; user profiles, notes, searches and messages remain in Supabase. No configured environment file, keys, installed dependencies, build output or Git history was copied into the adapter.
 
-[Open RoleRadar](https://roleradar.satingull2.chatgpt.site)
+## Verified
 
-OpenAI Sites confirmed successful publication on 3 November 2026. Access remains owner-private. The hosting service result is saved in [OPENAI-DEPLOYMENT-RESULT.json](OPENAI-DEPLOYMENT-RESULT.json). Browser and email-flow verification remain as stated above.
+- 66 local tests passed; one opt-in live-account test skipped.
+- Type checking and production build passed.
+- Production dependency audit reported zero vulnerabilities at execution time.
+- Seven live HTTP checks passed: homepage, configured account services, protected private profile, rejected foreign origin, accepted correct origin before input validation, real source search, and resolution of the returned listing ID through the shared catalog.
+- The real source returned **20 listings** and reported the tested opening **open** during this check. Counts and availability change; these are observations, not fixed claims.
 
-The live smoke check found a Worker bridge without a socket IP; the hosted adapter now derives its rate-limit bucket from the platform edge header, with a shared conservative fallback. Standalone proxy trust and account ownership checks remain intact.
+The live checks found and resolved two hosting compatibility defects: missing socket IPs in rate limiting, and an unsupported fetch redirect mode. Limits retain an edge-derived bucket and conservative fallback. Source fetches use manual redirect handling, so redirects still cannot silently move credentials to another destination.
 
-Live HTTP verification passed six checks: homepage, server configuration, private-profile protection, foreign-origin rejection, correct-origin validation and explicit source-state handling. The provider returned no listings during this check; sample mode remains explicitly fictional. Email signup/recovery and full browser flows remain unverified.
+## Remaining account-email setup
+
+The hosted server has the existing Supabase configuration. Public signup confirmation/recovery delivery remains unverified and needs suitable SMTP plus the production callback allowed in Supabase:
+
+`https://roleradar.satingull2.chatgpt.site/api/auth/callback`
+
+Set the provider Site URL to the live origin and use scoped redirect rules accommodating the SDK's query parameters. Do not disable confirmation to simulate success. See [setup](openai-site/docs/SETUP.md) and [hosting notes](openai-site/OPENAI-HOSTING.md).
+
+The live checks do not establish a real signup/reset delivery, a full browser/device audit, student time savings or hiring outcomes. Matching remains deterministic and the ChatGPT review remains manual.
