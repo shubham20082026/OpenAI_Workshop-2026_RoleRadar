@@ -3,17 +3,31 @@
   "status": "succeeded",
   "access": "owner-private",
   "site_id": "appgprj_6ae6ca1dd76c8191a83feaff7b102c15",
-  "version_id": "appgprj_6ae6ca1dd76c8191a83feaff7b102c15~appgver_2aa3be74e5fc819198e9b97c808ac17a",
-  "deployment_id": "appgdep_6aea012bc9c481919918461a784d1296",
-  "commit_sha": "64a4d10ea00bf5af768b0764d0d239f3908c8a29",
-  "confirmed_at": "2026-11-03T15:44:17.317367+00:00",
+  "version_id": "appgprj_6ae6ca1dd76c8191a83feaff7b102c15~appgver_c4e5aece84c08191bea9d7cf06bab8e5",
+  "deployment_id": "appgdep_6aea02f5954881919803c13c884c5eb1",
+  "commit_sha": "9cd0769b519495c2118d65ff16821f2be1366603",
+  "confirmed_at": "2026-11-03T15:51:44.112018+00:00",
   "local_checks": {
-    "tests_passed": 63,
+    "tests_passed": 66,
     "tests_failed": 0,
     "live_test_skipped": 1,
     "typecheck": "passed",
     "production_build": "passed",
     "production_dependency_vulnerabilities": 0
+  },
+  "live_http_checks": {
+    "passed": 6,
+    "checks": [
+      "Live homepage HTTP200 and title",
+      "Live Worker API and Supabase/deletion configuration",
+      "Private profile rejects missing app login",
+      "Foreign-origin mutation rejected",
+      "Correct hosted origin accepted before validation",
+      "Live search endpoint returns explicit source state"
+    ],
+    "sourceState": "unavailable",
+    "retrievedJobs": 0,
+    "openingState": null
   },
   "browser_qa": "unverified",
   "email_delivery": "pending SMTP and production callback verification"
