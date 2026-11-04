@@ -14,7 +14,7 @@ It was built for **SHOWCASE, the OpenAI Student Collective semester finale**, wi
 
 ## Why I built it
 
-The starting concern was scarce internship opportunities for third-year students and weak placement prospects for fourth-year students. I chose a smaller problem I could build around: help a student discover existing openings and inspect why they appear relevant before spending time on an application.
+I chose a smaller problem I could build around: help a student discover existing openings and inspect why they appear relevant before spending time on an application.
 
 The prototype focuses on **discovery and evidence**. It cannot create more vacancies, verify every employer or decide whether a student is eligible. Real student testing is still needed to establish whether this workflow saves time or reduces false leads.
 
